@@ -27,17 +27,8 @@ and then add them to the navigation by adding to the content of [_data/toc.myl](
 ### 3. Options
 
 Most of the configuration values in the [_config.yml](_config.yml) are self explanatory,
-but we can describe a few here if it's helpful.
-
-+ Theme
- - Green
-  - Blue
-  - Orange
-  - Purple
-  - Grey
-+ Fixed Navigation
-  - True
-  - False
+and for more details, see the [about page](https://vsoch.github.io/mkdocs-jekyll/about/)
+rendered on the site.
 
 ### 4. Serve
 
