@@ -2,5 +2,5 @@
     url: "/about"
     slug: about
   - title: "News"
-    url: "/articles"
+    url: "/news"
     slug: news

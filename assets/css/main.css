@@ -63,6 +63,44 @@ input {
     border: 0;
     outline: 0;
 }
+
+.changelog,
+.changelog > div {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+.changelog .date {
+  color: #888;
+  font-style: italic; }
+
+span.badge {
+  font-family: "Open Sans", sans-serif;
+  padding: 2px 5px;
+  margin-right: 5px;
+  text-transform: uppercase;
+  font-size: 1.0rem;
+  border-radius: 2px;
+  background: #eee;
+  font-weight: bold; }
+span.badge-primary {
+  background: #3c7dae;
+  color: #fff; }
+span.badge-secondary {
+  background: #999;
+  color: #fff; }
+span.badge-danger {
+  background: firebrick;
+  color: #fff; }
+span.badge-warning {
+  background: darkorange;
+  color: #fff; }
+span.badge-info {
+  background: royalblue;
+  color: #fff; }
+span.badge-success {
+  background: forestgreen;
+  color: #fff; }
+
 .md-clipboard:before, .md-icon, .md-nav__button, .md-nav__link:after, .md-nav__title:before, .md-search-result__article--document:before, .md-source-file:before, .md-typeset .admonition>.admonition-title:before, .md-typeset .admonition>summary:before, .md-typeset .critic.comment:before, .md-typeset .footnote-backref, .md-typeset .task-list-control .task-list-indicator:before, .md-typeset details>.admonition-title:before, .md-typeset details>summary:before, .md-typeset summary:after {
     font-family: Material Icons;
     font-style: normal;
@@ -75,6 +113,7 @@ input {
     word-wrap: normal;
     direction: ltr;
 }
+
 .md-content__icon, .md-footer-nav__button, .md-header-nav__button, .md-nav__button, .md-nav__title:before, .md-search-result__article--document:before {
     display: inline-block;
     margin: .4rem;

@@ -22,7 +22,7 @@
       <div class="md-footer-copyright">
         
           <div class="md-footer-copyright__highlight">
-            Copyright &copy; 2018 - {{ site.author }}
+            Copyright &copy; 2019 - {{ site.author }}
           </div>        
       </div>
       
@@ -43,4 +43,6 @@
 </footer>
 <script src="{{ site.baseurl }}/assets/js/application.js"></script>
 <!--<script src="{{ site.baseurl }}/assets/js/application.a59e2a89.js"></script>-->
-<script>app.initialize({version:"0.17.4",url:{base:"."}})</script>      
+{% assign slashes = page.url | split: "/" %}
+<script>console.log('{{ slashes | size }}')</script>
+<script>app.initialize({version:"0.17.4", url:{base:'{% if page.url == "/" %}.{% else %}{% for slash in slashes %}.{% endfor %}{% endif %}'}})</script>
