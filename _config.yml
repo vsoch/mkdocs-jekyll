@@ -24,10 +24,15 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: "/mkdocs-jekyll" # the subpath of your site, e.g. /blog
 url: "http://example.com" # the base hostname & protocol for your site
 
-# Social
+# Social (First three Required)
 repo: "https://github.com/vsoch/mkdocs-jekyll"
 github_user: "vsoch"
 github_repo: "mkdocs-jekyll"
+
+# Optional
+twitter: vsoch
+linkedin: vsochat
+dockerhub: vanessa
 
 # Image and (square) dimension for logo
 # logo: "/assets/img/logo/SRCC-square-white.png"

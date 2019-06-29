@@ -1,19 +1,19 @@
 <footer class="c-footer md-footer-nav">
   <div class="u-container c-footer__container">
     <nav class="md-footer-nav__inner md-grid">
-          <a href="bases/" title="Bases" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+         {% if page.next.url %}<a href="{{ site.baseurl }}{{ page.next.url }}" title="{{ page.next.title }}" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Bases
+                {{ page.next.title }}
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
             </div>
-          </a>
+          </a>{% endif %}
       </nav>
     </div>
   
@@ -22,19 +22,19 @@
       <div class="md-footer-copyright">
         
           <div class="md-footer-copyright__highlight">
-            Copyright &copy; 2019 - {{ site.author }}
+            Copyright &copy; {{ site.time | date: '%y' }} - {{ site.author }}
           </div>        
       </div>
       
         
   <div class="md-footer-social">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-      <a href="https://github.com/openbases" target="_blank" class="md-footer-social__link fa fa-github"></a>
-      <a href="https://twitter.com/vsoch" target="_blank" class="md-footer-social__link fa fa-twitter"></a>
-      <a href="https://linkedin.com/in/vsochat" target="_blank" class="md-footer-social__link fa fa-linkedin"></a>
-      <a href="http://hub.docker.com/r/openbases" class="md-footer-social__link fa" target="_blank">
+      <a href="https://github.com/{{ site.github_user }}" target="_blank" class="md-footer-social__link fa fa-github"></a>
+      {% if site.twitter %}<a href="https://twitter.com/{{ site.twitter }}" target="_blank" class="md-footer-social__link fa fa-twitter"></a>{% endif %}
+      {% if site.linkedin %}<a href="https://linkedin.com/in/{{ site.linkedin }}" target="_blank" class="md-footer-social__link fa fa-linkedin"></a>{% endif %}
+      {% if site.dockerhub %}<a href="http://hub.docker.com/r/{{ site.dockerhub }}" class="md-footer-social__link fa" target="_blank">
         <img src="{{ site.baseurl }}/assets/img/docker-clear.png" style="margin-left:10px" width="20px">
-      </a>
+      </a>{% endif %}
   </div>
 
     </div>
