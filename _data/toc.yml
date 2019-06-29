@@ -1,0 +1,6 @@
+  - title: "About"
+    url: "/about"
+    slug: about
+  - title: "News"
+    url: "/articles"
+    slug: news

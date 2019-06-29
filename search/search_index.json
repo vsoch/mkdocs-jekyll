@@ -1,0 +1,4 @@
+---
+layout: null
+---
+{"config":{"lang":["en"],"prebuild_index":false,"separator":"[\\s\\-]+"},"docs": [{% for page in site.pages %}{"location": "{{ page.url }}", "text": "{{ page.content | strip_html | strip_newlines | escape }}", "title": "{{ page.title }}"}{% if forloop.last %}]{% else %},{% endif %}{% endfor %}}
