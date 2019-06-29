@@ -1,0 +1,4 @@
+{% if site.tag_search_endpoint %}<div style="float:right; margin-bottom:30px">{% for tag in page.tags %}
+<span class="badge badge-secondary"><a style="cursor:pointer; color:white" href="{{ site.tag_search_endpoint }}{{ tag }}">{{ tag }}</a></span>
+{% endfor %}</div>{% endif %}
+
