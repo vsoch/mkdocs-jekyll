@@ -736,6 +736,8 @@ hr {
 .md-footer-nav {
     background-color: rgba(0, 0, 0, .87);
     color: #fff;
+    margin-top:50px;
+    padding-top:30px;
 }
 .md-footer-nav__inner {
     padding: .4rem;
