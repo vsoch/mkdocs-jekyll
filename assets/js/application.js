@@ -220,7 +220,7 @@
             Array.prototype.forEach.call(n, function(e) {
                     new f.default.Event.MatchMedia("(min-width: 1220px)", new f.default.Event.Listener(e.previousElementSibling, "click", new f.default.Nav.Collapse(e)))
                 }), new f.default.Event.MatchMedia("(max-width: 1219px)", new f.default.Event.Listener("[data-md-component=navigation] [data-md-toggle]", "change", new f.default.Nav.Scrolling("[data-md-component=navigation] nav"))), document.querySelector("[data-md-component=search]") && (new f.default.Event.MatchMedia("(max-width: 959px)", new f.default.Event.Listener("[data-md-toggle=search]", "change", new f.default.Search.Lock("[data-md-toggle=search]"))), new f.default.Event.Listener("[data-md-component=query]", ["focus", "keyup", "change"], new f.default.Search.Result("[data-md-component=result]", function() {
-                    return fetch(t.url.base + "/search_index.json", {
+                    return fetch(t.url.base + "/search/search_index.json", {
                         credentials: "same-origin"
                     }).then(function(e) {
                         console.log(e);
@@ -2759,9 +2759,14 @@
                 r(this, t);
                 var o = i(this, e.call(this, n)),
                     a = /^.+github\.com\/([^\/]+)\/?([^\/]+)?.*$/.exec(o.base_);
+                console.log("GitHub regexp is");
+                console.log(a);
+                console.log(a.length);
                 if (a && 3 === a.length) {
                     var s = a[1],
                         c = a[2];
+                    console.log("Username: " + s);
+                    console.log("Repository: " + c);
                     o.base_ = "https://api.github.com/users/" + s + "/repos", o.name_ = c
                 }
                 return o

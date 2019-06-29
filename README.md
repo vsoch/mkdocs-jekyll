@@ -6,7 +6,6 @@ previous arts:
  - [alexcarpenter/material-jekyll-theme](http://alexcarpenter.github.io/material-jekyll-theme)
  - [squidfunk/mkdocs-material](https://github.com/squidfunk/mkdocs-material)
 
-
 ## Usage
 
 ### 1. Get the code
