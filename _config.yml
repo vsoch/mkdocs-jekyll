@@ -42,6 +42,7 @@ dockerhub: vanessa
 # logo: "assets/img/logo/SRCC-square-white.png"
 logo: "assets/img/logo/SRCC-square-red.png"
 logo_pixels: 34
+color: "#8c1515" # primary color for header, buttons
 
 # Build settings
 markdown: kramdown
