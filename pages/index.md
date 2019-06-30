@@ -34,13 +34,8 @@ guide for a complete summary. Briefly:
  - *Navigation*: Control over the main navigation on the left of the page, and automatic generation of table of contents for each page on the right.
  - *News* A posts feed for news and updates, along with an archive (organized by year).
  - *Templates* or specifically, "includes" that make it easy to create an alert, documentation link, or other content.
-
-
-## Under Development
-
-Soon we will also have:
-
  - *Continuous Integration* recipes to preview the site
- - *Testing* for any broken links
 
-For features, getting started with development, see the {% include doc.html name="Getting Started" path="getting-started" %} page.
+
+For features, getting started with development, see the {% include doc.html name="Getting Started" path="getting-started" %} page. Would you like to request a feature or contribute?
+[Open an issue]({{ site.repo }}/issues)
