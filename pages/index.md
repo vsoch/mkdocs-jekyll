@@ -14,7 +14,7 @@ GitHub pages uses Jekyll natively, so when I make documentation, I typically
 look for Jekyll templates. Why? Using Jekyll means that I can use markdown,
 and allow for users to easily contribute, and build automatically just by
 way of pushing to a master branch (or general GitHub pages).
-I've liked MkDocs in the past, but it required me to use a special render.
+I've liked MkDocs in the past, but it required me to use a special renderer.
 I also felt limited in my ability to customize it. The same is true for
 mkdocs material. It's absolutely gorgeous, but was not suited for
 my GitHub pages and customization needs. For this reason, I've spent
