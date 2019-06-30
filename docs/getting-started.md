@@ -157,7 +157,7 @@ And here is the post preview with the rendered badges that it produces:
 
 ![BADGES](https://user-images.githubusercontent.com/814322/60386723-02281100-9a67-11e9-8226-b967445f9941.png)
 
-A second post with the other types is also shown.)
+A second post with the other types is also shown.
 
 ### Alerts
 
