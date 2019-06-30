@@ -38,9 +38,9 @@ twitter: vsoch
 linkedin: vsochat
 dockerhub: vanessa
 
-# Image and (square) dimension for logo
-# logo: "/assets/img/logo/SRCC-square-white.png"
-logo: "/assets/img/logo/SRCC-square-red.png"
+# Image and (square) dimension for logo (don't start with /)
+# logo: "assets/img/logo/SRCC-square-white.png"
+logo: "assets/img/logo/SRCC-square-red.png"
 logo_pixels: 34
 
 # Build settings
