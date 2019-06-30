@@ -132,6 +132,33 @@ folder that will parse into the site [feed]({{ site.baseurl }}/feed.xml)
 The bottom of the page links the user to a post archive, where posts are organized
 according to the year.
 
+### Badges
+
+For news post items, it's nice to be able to tag it with something that indicates
+a status, such as "warning" or "alert." For this reason, you can add badges to
+the front end matter of any post page, and they will render colored by a type,
+with the tag of your choice. For example, here is an example header for
+a post:
+
+```yaml
+---
+title:  "Two Thousand Nineteen"
+date:   2019-06-28 18:52:21
+categories: jekyll update
+badges:
+ - type: warning
+   tag: warning-badge
+ - type: danger
+   tag: danger-badge
+---
+```
+
+And here is the post preview with the rendered badges that it produces:
+
+![BADGES](https://user-images.githubusercontent.com/814322/60386723-02281100-9a67-11e9-8226-b967445f9941.png)
+
+A second post with the other types is also shown.)
+
 ### Alerts
 
 {% include alert.html type="info" title="What is an alert?" content="An alert is a box that can stand out to indicate important information. You can choose from levels success, warning, danger, info, and primary. This example is an info box, and the code for it looks like this:" %}

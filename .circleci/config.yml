@@ -44,7 +44,6 @@ jobs:
           key: rubygems-v1
           paths:
             - vendor/bundle
-      - run: *test_jekyll
       - run: *build_jekyll
       - store_artifacts:
           path: ~/repo/_site
