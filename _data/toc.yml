@@ -1,9 +1,6 @@
   - title: "Getting Started"
-    url: "/getting-started"
-    slug: getting-started
+    url: "/docs/getting-started"
   - title: "About"
     url: "/about"
-    slug: about
   - title: "News"
     url: "/news"
-    slug: news

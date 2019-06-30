@@ -54,6 +54,12 @@ permalink: /:year/:title/
 markdown: kramdown
 exclude: [_site, CHANGELOG.md, LICENSE, README.md]
 
+# Collections
+collections:
+  docs:
+    permalink: /:collection/:path
+    output: true
+
 # Defaults
 defaults:
   -
@@ -64,7 +70,7 @@ defaults:
       layout: "page"
   -
     scope:
-      path: ""
+      path: "posts"
       type: "posts"
     values:
       layout: "post"
