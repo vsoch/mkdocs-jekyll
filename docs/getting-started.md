@@ -274,8 +274,17 @@ bottom of the `.circleci/config.yml` file:
 
 In the above, the destination should coincide with your repository name.
 Remember that for most links, CircleCI won't honor an `index.html` file in a subfolder
-(e.g., `subfolder/index.html` will not be served as `subfolder/`, so for preview
-of these page you'll need to add an `index.html` to find the actual page.
+(e.g., `subfolder/index.html` will not be served as `subfolder/`, so for example,
+you might need to turn this:
+
+```
+https://<circleci>/0/mkdocs-jekyll/docs/getting-started/
+```
+into this:
+
+```
+https://<circleci>/0/mkdocs-jekyll/docs/getting-started/index.html
+```
 
 ## Customization
 

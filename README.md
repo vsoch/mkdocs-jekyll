@@ -1,5 +1,7 @@
 # MkDocs Jekyll Theme
 
+[![CircleCI](https://circleci.com/gh/vsoch/mkdocs-jekyll/tree/master.svg?style=svg)](https://circleci.com/gh/vsoch/mkdocs-jekyll/tree/master)
+
 This is a starter template for a mkdocs jekyll theme, based on these two
 previous arts:
 
