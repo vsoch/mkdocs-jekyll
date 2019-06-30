@@ -6,12 +6,7 @@ permalink: /
 
 # Welcome to MkDocs Jekyll!
 
-This is a starter template for a mkdocs jekyll theme, based on these two
-previous arts:
-
- - [alexcarpenter/material-jekyll-theme](http://alexcarpenter.github.io/material-jekyll-theme)
- - [squidfunk/mkdocs-material](https://github.com/squidfunk/mkdocs-material)
-
+This is a starter template for a mkdocs jekyll theme.
 
 ## Purpose
 
