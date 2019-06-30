@@ -116,11 +116,11 @@ want to link to docs, the url is the path starting with the docs folder.
 
 ```yaml
   - title: "Getting Started"
-    url: "/docs/getting-started/"
+    url: "docs/getting-started/"
   - title: "About"
-    url: "/about"
+    url: "about"
   - title: "News"
-    url: "/news"
+    url: "news"
 ```
 
 ### News Posts
@@ -273,6 +273,9 @@ bottom of the `.circleci/config.yml` file:
 ```
 
 In the above, the destination should coincide with your repository name.
+Remember that for most links, CircleCI won't honor an `index.html` file in a subfolder
+(e.g., `subfolder/index.html` will not be served as `subfolder/`, so for preview
+of these page you'll need to add an `index.html` to find the actual page.
 
 ## Customization
 
