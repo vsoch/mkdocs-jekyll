@@ -262,7 +262,17 @@ can use to preview your site on CircleCI before merging into master. You
 should follow the instructions to [set up a project](https://circleci.com/docs/enterprise/quick-start/),
 and then in the project settings be sure to enable building forked build requests,
 and to cancel redundant builds. The preview will be built on CircleCI, and saved
-to static files for you to browse.
+to static files for you to browse. The only change you will need is to edit
+the static files location to be the name of your respository, which is at te
+bottom of the `.circleci/config.yml` file:
+
+```yaml
+      - store_artifacts:
+          path: ~/repo/_site
+          destination: mkdocs-jekyll
+```
+
+In the above, the destination should coincide with your repository name.
 
 ## Customization
 
