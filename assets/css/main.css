@@ -308,11 +308,6 @@ code, kbd, pre {
     margin-right: .07812em;
     margin-left: 0;
 }
-.md-typeset blockquote {
-    padding-left: 1.2rem;
-    border-left: .4rem solid rgba(0, 0, 0, .26);
-    color: rgba(0, 0, 0, .54);
-}
 [dir=rtl] .md-typeset blockquote {
     padding-right: 1.2rem;
     padding-left: 0;
