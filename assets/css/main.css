@@ -347,6 +347,13 @@ code, kbd, pre {
 .md-typeset ol li blockquote, .md-typeset ol li p, .md-typeset ul li blockquote, .md-typeset ul li p {
     margin: .5em 0;
 }
+
+blockquote {
+    background-color: rgba(255,229,100,.3);
+    border-left: 8px solid #ffe564;
+    padding: 15px 20px 15px 15px;
+}
+
 .md-typeset ol li:last-child, .md-typeset ul li:last-child {
     margin-bottom: 0;
 }

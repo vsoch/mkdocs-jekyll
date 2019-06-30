@@ -30,10 +30,12 @@ into [this json data structure](https://vsoch.github.io/mkdocs-jekyll/search/sea
 that feeds into the search defined in `assets/js/application.js`. If you want to
 exclude any file from search, add this to its front end matter:
 
+```
 ---
 layout: null
 excluded_in_search: true
 ---
+```
 
 The example above is for a css file in the assets folder that is used as a template,
 but should not be included in search.
@@ -155,17 +157,22 @@ badges:
 
 And here is the post preview with the rendered badges that it produces:
 
-![BADGES](https://user-images.githubusercontent.com/814322/60386723-02281100-9a67-11e9-8226-b967445f9941.png)
+<span class="badge badge-warning">warning-badge</span>
+<span class="badge badge-danger">danger-badge</span>
 
-A second post with the other types is also shown.
+And the other badges that you can define include success, info, secondary,
+and primary.
 
+<span class="badge badge-success">success-badge</span>
+<span class="badge badge-info">info-badge</span>
+<span class="badge badge-secondary">secondary-badge</span>
+<span class="badge badge-primary">primary-badge</span>
 ### Alerts
 
-{% include alert.html type="info" title="What is an alert?" content="An alert is a box that can stand out to indicate important information. You can choose from levels success, warning, danger, info, and primary. This example is an info box, and the code for it looks like this:" %}
+{% include alert.html type="info" title="What is an alert?" content="An alert is a box that can stand out to indicate important information. You can choose from levels success, warning, danger, info, and primary. This example is an info box, and the code for another might look like this:" %}
 
 ```
-{%raw%}{% include alert.html type="info" title="What is an alert?" content="An alert is a box that can stand out to indicate important information. You can choose from levels success, warning, danger, info, and primary. This example is an info box, and the code for it looks like this:" %}
-{%endraw%}
+{%raw%}{% include alert.html type="info" title="Here is another!" %}{%endraw%}
 ```
 
 Just for fun, here are all the types:
@@ -173,6 +180,12 @@ Just for fun, here are all the types:
 {% include alert.html type="warning" content="This is a warning" %}
 {% include alert.html type="danger" content="This alerts danger!" %}
 {% include alert.html type="success" content="This alerts success" %}
+
+### Quotes
+
+You can include block quotes to emphasize text. 
+
+> Here is an example. Isn't this much more prominent to the user?
 
 ## Development
 
