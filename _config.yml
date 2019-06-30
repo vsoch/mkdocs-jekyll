@@ -21,8 +21,12 @@ description: > # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
+
+# DO NOT CHANGE THE LINE OF THIS FILE without editing .circleci/circle_urls.sh
 baseurl: "/mkdocs-jekyll" # the subpath of your site, e.g. /blog
-url: "http://example.com" # the base hostname & protocol for your site
+
+# This is mostly for testing
+url: "" # the base hostname & protocol for your site
 
 # Social (First three Required)
 repo: "https://github.com/vsoch/mkdocs-jekyll"
@@ -34,9 +38,9 @@ twitter: vsoch
 linkedin: vsochat
 dockerhub: vanessa
 
-# Image and (square) dimension for logo
-# logo: "/assets/img/logo/SRCC-square-white.png"
-logo: "/assets/img/logo/SRCC-square-red.png"
+# Image and (square) dimension for logo (don't start with /)
+# logo: "assets/img/logo/SRCC-square-white.png"
+logo: "assets/img/logo/SRCC-square-red.png"
 logo_pixels: 34
 
 # Build settings
@@ -52,7 +56,7 @@ fixedNav: 'true' # true or false
 
 permalink: /:year/:title/
 markdown: kramdown
-exclude: [_site, CHANGELOG.md, LICENSE, README.md]
+exclude: [_site, CHANGELOG.md, LICENSE, README.md, vendor]
 
 # Collections
 collections:

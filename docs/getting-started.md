@@ -116,11 +116,11 @@ want to link to docs, the url is the path starting with the docs folder.
 
 ```yaml
   - title: "Getting Started"
-    url: "/docs/getting-started/"
+    url: "docs/getting-started/"
   - title: "About"
-    url: "/about"
+    url: "about"
   - title: "News"
-    url: "/news"
+    url: "news"
 ```
 
 ### News Posts
@@ -131,6 +131,33 @@ For this reason, you can write traditional [posts](https://jekyllrb.com/docs/pos
 folder that will parse into the site [feed]({{ site.baseurl }}/feed.xml)
 The bottom of the page links the user to a post archive, where posts are organized
 according to the year.
+
+### Badges
+
+For news post items, it's nice to be able to tag it with something that indicates
+a status, such as "warning" or "alert." For this reason, you can add badges to
+the front end matter of any post page, and they will render colored by a type,
+with the tag of your choice. For example, here is an example header for
+a post:
+
+```yaml
+---
+title:  "Two Thousand Nineteen"
+date:   2019-06-28 18:52:21
+categories: jekyll update
+badges:
+ - type: warning
+   tag: warning-badge
+ - type: danger
+   tag: danger-badge
+---
+```
+
+And here is the post preview with the rendered badges that it produces:
+
+![BADGES](https://user-images.githubusercontent.com/814322/60386723-02281100-9a67-11e9-8226-b967445f9941.png)
+
+A second post with the other types is also shown.)
 
 ### Alerts
 
@@ -227,7 +254,37 @@ jekyll serve
 bundle exec jekyll serve
 ```
 
-You can then move on to customization.
+
+### Preview
+
+We provide a [CircleCI](https://circleci.com/) configuration recipe that you
+can use to preview your site on CircleCI before merging into master. You
+should follow the instructions to [set up a project](https://circleci.com/docs/enterprise/quick-start/),
+and then in the project settings be sure to enable building forked build requests,
+and to cancel redundant builds. The preview will be built on CircleCI, and saved
+to static files for you to browse. The only change you will need is to edit
+the static files location to be the name of your respository, which is at te
+bottom of the `.circleci/config.yml` file:
+
+```yaml
+      - store_artifacts:
+          path: ~/repo/_site
+          destination: mkdocs-jekyll
+```
+
+In the above, the destination should coincide with your repository name.
+Remember that for most links, CircleCI won't honor an `index.html` file in a subfolder
+(e.g., `subfolder/index.html` will not be served as `subfolder/`, so for example,
+you might need to turn this:
+
+```
+https://<circleci>/0/mkdocs-jekyll/docs/getting-started/
+```
+into this:
+
+```
+https://<circleci>/0/mkdocs-jekyll/docs/getting-started/index.html
+```
 
 ## Customization
 
