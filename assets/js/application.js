@@ -1,3 +1,7 @@
+---
+layout: null
+excluded_in_search: true
+---
 ! function(e, t) {
     for (var n in t) e[n] = t[n]
 }(window, function(e) {
@@ -220,7 +224,7 @@
             Array.prototype.forEach.call(n, function(e) {
                     new f.default.Event.MatchMedia("(min-width: 1220px)", new f.default.Event.Listener(e.previousElementSibling, "click", new f.default.Nav.Collapse(e)))
                 }), new f.default.Event.MatchMedia("(max-width: 1219px)", new f.default.Event.Listener("[data-md-component=navigation] [data-md-toggle]", "change", new f.default.Nav.Scrolling("[data-md-component=navigation] nav"))), document.querySelector("[data-md-component=search]") && (new f.default.Event.MatchMedia("(max-width: 959px)", new f.default.Event.Listener("[data-md-toggle=search]", "change", new f.default.Search.Lock("[data-md-toggle=search]"))), new f.default.Event.Listener("[data-md-component=query]", ["focus", "keyup", "change"], new f.default.Search.Result("[data-md-component=result]", function() {
-                    return fetch(t.url.base + "/search/search_index.json", {
+                    return fetch("{{ site.baseurl }}/search/search_index.json", {
                         credentials: "same-origin"
                     }).then(function(e) {
                         console.log(e);
