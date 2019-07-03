@@ -45,4 +45,4 @@
 <!--<script src="{{ site.baseurl }}/assets/js/application.a59e2a89.js"></script>-->
 {% assign slashes = page.url | split: "/" %}
 <script>console.log('{{ slashes | size }}')</script>
-<script>app.initialize({version:"0.17.4", url:{base:'{% if page.url == "/" %}.{% else %}{% for slash in slashes %}.{% endfor %}{% endif %}'}})</script>
+<script>app.initialize({version:"0.17.4", url:{base:'{{ site.baseurl }}'}})</script>
