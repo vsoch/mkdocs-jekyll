@@ -2,7 +2,9 @@
 
 [![CircleCI](https://circleci.com/gh/vsoch/mkdocs-jekyll/tree/master.svg?style=svg)](https://circleci.com/gh/vsoch/mkdocs-jekyll/tree/master)
 
-This is a starter template for a mkdocs jekyll theme, based on these two
+![assets/img/mkdocs-jekyll.png](assets/img/mkdocs-jekyll.png)
+
+This is a [starter template](https://vsoch.github.com/mkdocs-jekyll/) for a mkdocs jekyll theme, based on these two
 previous arts:
 
  - [alexcarpenter/material-jekyll-theme](http://alexcarpenter.github.io/material-jekyll-theme)
