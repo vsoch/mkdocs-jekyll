@@ -110,15 +110,37 @@ that are still browsable easily via search or the table of contents on the right
 
 The `pages` folder uses the same page layout, but is not part of the docs collection.
 The two are provided to create a distinction between website pages (e.g., about,
-feed.xml) and documentation pages.  Whether you place your page under 
-"pages" or "docs," for those pages that you want added to the navigation, 
+feed.xml) and documentation pages.  
+
+### Navigation
+
+Whether you place your page under "pages" or "docs," for those pages that you want added to the navigation, 
 you should add them to `_data/toc.yml`. If you've defined a `permalink` in the
 front end matter, you can use that (e.g., "About" below). If you haven't and
 want to link to docs, the url is the path starting with the docs folder.
+Here is an example of a flat structure:
 
 ```yaml
   - title: "Getting Started"
     url: "docs/getting-started/"
+  - title: "About"
+    url: "about"
+  - title: "News"
+    url: "news"
+```
+
+And here is an example with nested children (currently active in the example):
+
+```yaml
+  - title: "Getting Started"
+    url: "docs/getting-started"
+    children:
+      - title: Features
+        url: "docs/getting-started#features"
+      - title: Development
+        url: "docs/getting-started#development"
+      - title: Customization
+        url: "docs/getting-started#customization"
   - title: "About"
     url: "about"
   - title: "News"

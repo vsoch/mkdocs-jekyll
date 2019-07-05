@@ -1,5 +1,12 @@
   - title: "Getting Started"
     url: "docs/getting-started"
+    children:
+      - title: Features
+        url: "docs/getting-started#features"
+      - title: Development
+        url: "docs/getting-started#development"
+      - title: Customization
+        url: "docs/getting-started#customization"
   - title: "About"
     url: "about"
   - title: "News"

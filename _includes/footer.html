@@ -42,7 +42,12 @@
 
 </footer>
 <script src="{{ site.baseurl }}/assets/js/application.js"></script>
-<!--<script src="{{ site.baseurl }}/assets/js/application.a59e2a89.js"></script>-->
+<script>
+$(".pancakes-parent").on('click', function(){ 
+    console.log($(this).next());
+    $(this).next().find('.pancakes-child').toggle();
+})
+</script>
 {% assign slashes = page.url | split: "/" %}
 <script>console.log('{{ slashes | size }}')</script>
 <script>app.initialize({version:"0.17.4", url:{base:'{{ site.baseurl }}'}})</script>
