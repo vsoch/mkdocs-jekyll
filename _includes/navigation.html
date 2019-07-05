@@ -13,7 +13,7 @@
             <div class=md-flex>
                 <div class="md-flex__cell md-flex__cell--shrink">
                   <a class="md-header-nav__button md-logo" href="." title="{{ site.title }}">
-                    <img height="{{ site.logo_pixels }}" src="{{ site.baseurl }}/{{ site.logo }}" width="{{ site.logo_pixels }}"></a>
+                    {% if site.logo %}<img height="{{ site.logo_pixels }}" src="{{ site.baseurl }}/{{ site.logo }}" width="{{ site.logo_pixels }}">{% else %}<i class="md-icon" style="margin-top:5px"></i>{% endif %}</a>
                 </div>
                 <div class="md-flex__cell md-flex__cell--shrink">
                     <label class="md-icon md-icon--menu md-header-nav__button" for=__drawer></label>

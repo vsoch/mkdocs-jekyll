@@ -39,8 +39,8 @@ linkedin: vsochat
 dockerhub: vanessa
 
 # Image and (square) dimension for logo (don't start with /)
-# logo: "assets/img/logo/SRCC-square-white.png"
-logo: "assets/img/logo/SRCC-square-red.png"
+# If commented, will use material hat theme
+# logo: "assets/img/logo/SRCC-square-red.png"
 logo_pixels: 34
 color: "#8c1515" # primary color for header, buttons
 
