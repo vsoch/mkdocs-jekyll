@@ -341,7 +341,7 @@ the tag, the user will be taken to this page to search for it. As an example,
 we define the current search endpoint to be Ask Cyberinfrastructure, and
 page tags link to a search on it:
 
-```
+```yaml
 tag_search_endpoint: https://ask.cyberinfrastructure.org/search?q=
 tag_color: danger # danger, success, warning, primary, secondary, info
 ```
