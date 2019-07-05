@@ -52,7 +52,7 @@
                 {% if section.children %}<nav class="md-nav">
                     <ul class="md-nav__list">
                         {% for child in section.children %}<li class="md-nav__item">
-                        <a href="{{ site.baseurl }}{{ child.url }}" 
+                        <a href="{{ site.baseurl }}/{{ child.url }}" 
                            title="{{ child.title }}" style="display:none"
                            class="md-nav__link pancakes-child">{{ child.title }}</a>
                         </li>{% endfor %}
