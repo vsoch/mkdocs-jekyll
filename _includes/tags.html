@@ -1,4 +1,2 @@
-{% if site.tag_search_endpoint %}<div style="float:right; margin-bottom:30px">{% for tag in page.tags %}
-<span class="badge badge-secondary"><a style="cursor:pointer; color:white" href="{{ site.tag_search_endpoint }}{{ tag }}">{{ tag }}</a></span>
-{% endfor %}</div>{% endif %}
-
+{% if site.tag_search_endpoint %}{% if page.tags %}<script>
+$('h1').first().append('<div>{% for tag in page.tags %}<span class="badge badge-{{ site.tag_color }}"><a style="cursor:pointer; color:white" href="{{ site.tag_search_endpoint }}{{ tag }}">{{ tag }}</a></span>{% endfor %}</div>')</script>{% endif %}{% endif %}
