@@ -882,6 +882,10 @@ html .md-footer-meta.md-typeset a:focus, html .md-footer-meta.md-typeset a:hover
 }
 .md-nav__item--nested>.md-nav__link:after {
     content: "\E313"}
+
+.open-parent:after {
+    content: "\E316" !important}
+
 html .md-nav__link[for=__toc], html .md-nav__link[for=__toc]+.md-nav__link:after, html .md-nav__link[for=__toc]~.md-nav {
     display: none;
 }
