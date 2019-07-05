@@ -227,10 +227,8 @@ excluded_in_search: true
                     return fetch("{{ site.baseurl }}/search/search_index.json", {
                         credentials: "same-origin"
                     }).then(function(e) {
-                        console.log(e);
                         return e.json()
                     }).then(function(e) {
-                        console.log(e);
                         return e.docs.map(function(e) {
                             return e.location = t.url.base + e.location, e
                         })
@@ -2763,9 +2761,6 @@ excluded_in_search: true
                 r(this, t);
                 var o = i(this, e.call(this, n)),
                     a = /^.+github\.com\/([^\/]+)\/?([^\/]+)?.*$/.exec(o.base_);
-                console.log("GitHub regexp is");
-                console.log(a);
-                console.log(a.length);
                 if (a && 3 === a.length) {
                     var s = a[1],
                         c = a[2];
