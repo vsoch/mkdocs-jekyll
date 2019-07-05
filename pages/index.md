@@ -4,9 +4,11 @@ title: Material Jekyll Theme
 permalink: /
 ---
 
-# Welcome to MkDocs Jekyll!
+# Welcome to MkDocs Jekyll
 
 This is a starter template for a mkdocs jekyll theme.
+
+![assets/img/macbook-preview.png](assets/img/macbook-preview.png)
 
 ## Purpose
 

@@ -2,7 +2,7 @@
 
 [![CircleCI](https://circleci.com/gh/vsoch/mkdocs-jekyll/tree/master.svg?style=svg)](https://circleci.com/gh/vsoch/mkdocs-jekyll/tree/master)
 
-![assets/img/mkdocs-jekyll.png](assets/img/mkdocs-jekyll.png)
+![assets/img/macbook-preview.png](assets/img/macbook-preview.png)
 
 This is a [starter template](https://vsoch.github.com/mkdocs-jekyll/) for a mkdocs jekyll theme, based on these two
 previous arts:
