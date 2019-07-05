@@ -3,7 +3,6 @@ title: Getting Started
 tags: 
  - jekyll
  - github
- - github-pages
 ---
 
 # Getting Started
@@ -344,6 +343,18 @@ page tags link to a search on it:
 
 ```
 tag_search_endpoint: https://ask.cyberinfrastructure.org/search?q=
+tag_color: danger # danger, success, warning, primary, secondary, info
 ```
 
-The tags appear at the bottom of the page for you to click, as on this page.
+Note that you can also choose a color! The tags appear at the top of the page,
+as they do on this page. The tags should be defined like this in the front end
+matter:
+
+```yaml
+tags: 
+ - jekyll
+ - github
+```
+
+They are appended to the first h1 block, so generally your pages should have a header.
+
