@@ -2306,6 +2306,17 @@ html [dir=rtl] .md-search__inner {
     transition: width 0s, height 0s, opacity .25s;
     opacity: 1;
 }
+.not-mobile-nav {
+  display: none !important;
+}
+.mobile-nav {
+  display: normal !important;
+}
+.md-nav--primary .md-nav__item--nested>.md-nav__link:after {
+    content: "" !important}
+[dir=rtl] .md-nav--primary .md-nav__item--nested>.md-nav__link:after {
+    content: "" !important}
+
 .md-header-nav__button.md-icon--home, .md-header-nav__button.md-logo {
     display: none;
 }
