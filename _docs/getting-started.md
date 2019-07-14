@@ -146,6 +146,13 @@ And here is an example with nested children (currently active in the example):
     url: "news"
 ```
 
+If you want to add an external url for a parent or child, do this:
+
+```yaml
+  - title: GitHub Repository
+    external_url: https://www.github.com/vsoch/mkdocs-jekyll
+```
+
 ### News Posts
 
 It might be the case that your site or group has news items that would
