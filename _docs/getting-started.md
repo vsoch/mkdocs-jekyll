@@ -195,6 +195,7 @@ and primary.
 <span class="badge badge-info">info-badge</span>
 <span class="badge badge-secondary">secondary-badge</span>
 <span class="badge badge-primary">primary-badge</span>
+
 ### Alerts
 
 {% include alert.html type="info" title="What is an alert?" content="An alert is a box that can stand out to indicate important information. You can choose from levels success, warning, danger, info, and primary. This example is an info box, and the code for another might look like this:" %}
@@ -205,6 +206,7 @@ and primary.
 
 Just for fun, here are all the types:
 
+{% include alert.html type="tip" content="This is a tip." %}
 {% include alert.html type="warning" content="This is a warning" %}
 {% include alert.html type="danger" content="This alerts danger!" %}
 {% include alert.html type="success" content="This alerts success" %}
