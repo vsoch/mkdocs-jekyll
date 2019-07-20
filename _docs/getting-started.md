@@ -207,6 +207,7 @@ and primary.
 Just for fun, here are all the types:
 
 {% include alert.html type="tip" content="This is a tip." %}
+{% include alert.html type="question" content="This is a question." %}
 {% include alert.html type="warning" content="This is a warning" %}
 {% include alert.html type="danger" content="This alerts danger!" %}
 {% include alert.html type="success" content="This alerts success" %}
