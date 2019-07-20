@@ -162,6 +162,22 @@ folder that will parse into the site [feed]({{ site.baseurl }}/feed.xml)
 The bottom of the page links the user to a post archive, where posts are organized
 according to the year.
 
+### Buttons
+
+Buttons come in a nice array of colors. Here is the code for a basic example,
+and you'd want to vary the `.btn-<tag>` to get different classes.
+
+```html
+<button class="btn btn-success">.btn-success</button>
+```
+
+<button class="btn btn-success">.btn-success</button>
+<button class="btn btn-info">.btn-info</button>
+<button class="btn btn-secondary">.btn-secondary</button>
+<button class="btn btn-primary">.btn-primary</button>
+<button class="btn btn-danger">.btn-danger</button>
+<button class="btn btn-warning">.btn-warning</button>
+
 ### Badges
 
 For news post items, it's nice to be able to tag it with something that indicates

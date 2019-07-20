@@ -78,6 +78,8 @@ input {
   color: #888;
   font-style: italic; }
 
+/* Badges */
+
 span.badge {
   font-family: "Open Sans", sans-serif;
   padding: 2px 5px;
@@ -105,6 +107,35 @@ span.badge-info {
 span.badge-success {
   background: forestgreen;
   color: #fff; }
+
+/* Buttons */
+
+.btn {
+  border-radius: 3px;
+  padding: 5px;
+  color: white;
+}
+
+.btn-primary {
+  background: #3c7dae;
+  color: #fff; }
+.btn-secondary {
+  background: #999;
+  color: #fff; }
+.btn-danger {
+  background: firebrick;
+  color: #fff; }
+.btn-warning {
+  background: darkorange;
+  color: #fff; }
+.btn-info {
+  background: royalblue;
+  color: #fff; }
+.btn-success {
+  background: forestgreen;
+  color: #fff; }
+
+/* Primary Styles */
 
 .md-clipboard:before, .md-icon, .md-nav__button, .md-nav__link:after, .md-nav__title:before, .md-search-result__article--document:before, .md-source-file:before, .md-typeset .admonition>.admonition-title:before, .md-typeset .admonition>summary:before, .md-typeset .critic.comment:before, .md-typeset .footnote-backref, .md-typeset .task-list-control .task-list-indicator:before, .md-typeset details>.admonition-title:before, .md-typeset details>summary:before, .md-typeset summary:after {
     font-family: Material Icons;
