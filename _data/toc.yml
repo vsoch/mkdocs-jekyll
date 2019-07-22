@@ -7,6 +7,11 @@
       url: "docs/getting-started#development"
     - title: Customization
       url: "docs/getting-started#customization"
+- title: "Extras"
+  url: "docs/extras"
+  children:
+    - title: Quizzes
+      url: "docs/extras/example-quiz"
 - title: "About"
   url: "about"
 - title: "News"
