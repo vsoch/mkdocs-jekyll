@@ -14,6 +14,7 @@ Critical items to know are:
  - changed behaviour
 
 ## [master](https://github.com/vsoch/mkdocs-jekyll/tree/master)
+ - button mouseovers (hover) and extra boxes for tips, questions, etc. (0.0.13)
  - basic support for multiple choice quizzes (0.0.12)
  - adding colored buttons, various fixed to navigation (0.0.11)
  - getting search working (0.0.1)
