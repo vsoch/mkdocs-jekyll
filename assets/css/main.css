@@ -116,6 +116,10 @@ span.badge-success {
   color: white;
 }
 
+.btn:hover {
+  background: #888;
+}
+
 .btn-primary {
   background: #3c7dae;
   color: #fff; }
