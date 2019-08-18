@@ -14,6 +14,7 @@ Critical items to know are:
  - changed behaviour
 
 ## [master](https://github.com/vsoch/mkdocs-jekyll/tree/master)
+ - adding pointer to buttons (0.0.15)
  - missing site.url from config (0.0.14)
  - button mouseovers (hover) and extra boxes for tips, questions, etc. (0.0.13)
  - basic support for multiple choice quizzes (0.0.12)
