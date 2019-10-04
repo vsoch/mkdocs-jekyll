@@ -36,8 +36,17 @@ excluded_in_search: true
 ---
 ```
 
-The example above is for a css file in the assets folder that is used as a template,
-but should not be included in search.
+The example above is for a css file in the assets folder that is used as a template, but should not be included in search. If you need to disable search entirely for a page, you can add the `disable_search` header:
+
+```
+---
+layout: null
+disable_search: true
+---
+```
+
+Disabling search will remove the search box at the top.
+
 
 ### External Search
 
@@ -46,6 +55,29 @@ in `?q=<term>`, then you can automatically link page tags to search this endpoin
 For example, on an HPC site I'd want a tag like "mpi" to do a search on 
 [http://ask.cyberinfrastructure.org](http://ask.cyberinfrastructure.org) for mpi.
 See the [tags](#tags) section below for how to configure this.
+
+
+### Discourse Forum
+
+If you have a discourse forum that you want to show questions from,
+there is an [easy way](https://meta.discourse.org/t/embedding-a-list-of-discourse-topics-in-another-site/125911) to embed them here. Specifically, there is an include `{% raw %}{% include embed/discourse.html %}{% endraw %}` that is deployed at [/forum]({{ site.baseurl }}/forum/) and added to the table of contents under Extra -> Discussion Forum. You can add this include to wherever you want the questions to appear. The follow parameters are defined in the config.yml:
+
+```yaml
+discourse_site: "https://ask.cyberinfrastructure.org" 
+discourse_per_page: 10
+discourse_category: "stanford-research-computing"
+discourse_tags: null # comma separated string, leave null to not filter
+```
+
+For the above, we embed 10 topics from the stanford-research-computing category of AskCI, and render 10 per page. Since there are few topics, we don't filter down to tags. If we did, we should provide a list of comma separated values.
+The page looks like this and is [live here]({{ site.baseurl }}/forum/):
+
+![{{ site.baseurl }}/assets/img/discourse-forum.png]({{ site.baseurl }}/assets/img/discourse-forum.png)
+
+Note that you aren't required to only embed one category - you can easily modify the code to include more than one by copy pasting the `d-topics-list`.
+
+{% include alert.html type="info" content="To use this for your discourse site, you must enable the 'embed topics' setting." %}
+
 
 ### Documentation
 
