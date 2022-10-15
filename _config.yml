@@ -37,7 +37,7 @@ github_repo: "mkdocs-jekyll"
 twitter: vsoch
 linkedin: vsochat
 dockerhub: vanessa
-# google-analytics: UA-XXXXXXXXXX
+# google-analytics: G-XXXXXXXXXX
 # Image and (square) dimension for logo (don't start with /)
 # If commented, will use material hat theme
 # logo: "assets/img/logo/SRCC-square-red.png"
